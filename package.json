@@ -18,5 +18,9 @@
   "homepage": "https://github.com/JavierLuna/tslox#readme",
   "devDependencies": {
     "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.2",
+    "ts-node": "^9.0.0"
   }
 }
