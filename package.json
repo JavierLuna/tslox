@@ -2,9 +2,14 @@
   "name": "tslox",
   "version": "1.0.0",
   "description": "A Typescript implementation of the Lox programming language",
-  "main": "index.js",
+  "main": "./lib/cli/main.js",
+  "bin": {
+    "lox": "./lib/cli/main.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p .",
+    "install": "npm run build && npm i -g",
+    "lox": "ts-node ./src/cli/main.ts"
   },
   "repository": {
     "type": "git",
